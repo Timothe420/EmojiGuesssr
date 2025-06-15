@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmojiGuessr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen active">
+        <h1 class="title">EmojiGuessr</h1>
+        <button id="start-button" class="btn">Start</button>
+        <div id="floating-emojis"></div>
+    </div>
+
+    <div id="game-screen" class="screen">
+        <div class="top-bar">
+            <div id="lives" class="lives"></div>
+            <div id="streak" class="streak">Streak: 0</div>
+        </div>
+        <div id="emoji-container" class="emoji-container"></div>
+        <div class="input-area">
+            <input type="text" id="guess-input" placeholder="Dein Tipp..." autocomplete="off">
+            <button id="submit-button" class="btn">OK</button>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
